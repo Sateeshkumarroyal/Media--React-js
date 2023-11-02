@@ -1,0 +1,317 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.maincontainer {
+  background: #2D2D2D;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/*  header */
+
+.btnYellow {
+  background-color: #FFCB05 !important;
+  height: 39px;
+  border-radius: 10px !important;
+  font-family: Inter !important;
+  font-size: 20px !important;
+  font-weight: 900 !important;
+  line-height: 24px !important;
+  letter-spacing: 0em !important;
+  text-align: center !important;
+  color: #000000 !important;
+}
+
+.btnYellowInsta {
+  background-color: #FFCB05 !important;
+  border-radius: 10px !important;
+  font-family: Inter !important;
+  font-size: 20px !important;
+  font-weight: 900 !important;
+  line-height: 24px !important;
+  letter-spacing: 0em !important;
+  text-align: center !important;
+  color: #000000 !important;
+}
+
+/* footer */
+
+.custom-element {
+  width: 100%;
+  position: relative;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  margin: 0 auto;
+  height: 8em;
+}
+
+.social-icon {
+  margin-right: 10px;
+}
+
+/* Add styles to the icons themselves, such as size and hover effects */
+.social-icon img {
+  width: 42.41px;
+  height: 42.31px;
+  top: 2124px;
+  left: 767.98px;
+  padding: 4.41px, 12.02px, 4.41px, 12.02px;
+
+}
+
+/* hover effect */
+.social-icon:hover img {
+  opacity: 0.8;
+}
+
+.copyright-text {
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+/* mainApp */
+
+.title-app {
+  color: #F1F1F1;
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.custom-image {
+  background-size: cover;
+  border: 10px solid #FFFFFF !important;
+  width: 100%;
+  height: 89% !important;
+  border-radius: 20px !important;
+}
+
+.newsTitle {
+  color: #F1F1F1;
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.image-container {
+  position: relative;
+}
+
+/* Base styles for all screens */
+.image-overlay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+}
+
+/* Media query for screens narrower than 768px */
+@media (max-width: 768px) {
+  .image-overlay {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+
+.overlay-text {
+  font-weight: bold;
+  color: #F1F1F1;
+  font-size: 16px;
+}
+
+
+/*  cards */
+
+.card {
+  border: 1px solid #151515 !important;
+}
+
+.trending-image {
+  background-size: cover;
+  width: 100% !important;
+  border-radius: 20px !important;
+}
+
+.card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.insideText {
+  font-family: Inter !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  line-height: 15px !important;
+  letter-spacing: 0em !important;
+  text-align: left !important;
+  color: #ffffff !important;
+}
+
+.card-text {
+  font-family: Roboto !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  line-height: 14px !important;
+  letter-spacing: 0em !important;
+  text-align: left !important;
+  color: #A1A1A1 !important;
+
+}
+
+.card-title {
+  font-family: JejuGothic !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+  letter-spacing: 0em !important;
+  text-align: left !important;
+  color: #FFFFFF !important;
+}
+
+.card-body {
+  background-color: #1E1E1E !important;
+}
+
+.latestContainer {
+  background-color: #151515 !important;
+  border-radius: 20px !important;
+}
+
+.trendingContainer {
+  background-color: #151515 !important;
+  border-radius: 20px !important;
+  margin-top: 2rem !important;
+  margin-bottom: 4rem !important
+}
+
+.first-card .card::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 0;
+  bottom: 0;
+  width: 25%;
+  background-image: url('../public/assets/RectangleLeft18.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.fourth-card .card::before {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 0;
+  bottom: 0;
+  width: 25%;
+  background-image: url('../public/assets/RectangleRight 17.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* ---------------- Media quiries  ----------------------*/
+
+/* Hide previous and next buttons on screens with a maximum width of 768px (responsive view) */
+@media (max-width: 768px) {
+
+  .prev-button,
+  .next-button {
+    display: none;
+  }
+
+  /* Hide the styles for the first and fourth cards */
+  .first-card .card::before,
+  .fourth-card .card::before {
+    display: none;
+  }
+}
+
+/* Show previous and next buttons on screens with a minimum width of 768px (desktop view) */
+@media (min-width: 768px) {
+
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent !important;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .prev-button {
+    left: 10px;
+  }
+
+  .next-button {
+    right: 10px;
+    color: #ffffff;
+  }
+
+  /* Hide the icon when the button is disabled */
+  .prev-button:disabled .svg-inline--fa,
+  .next-button:disabled .svg-inline--fa {
+    color: transparent;
+  }
+
+}
